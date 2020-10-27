@@ -7,10 +7,8 @@
 // obtain one at http://mozilla.org/MPL/2.0/.
 #include "eigs.h"
 
-#include "cotmatrix.h"
 #include "sort.h"
 #include "slice.h"
-#include "massmatrix.h"
 #include <iostream>
 
 template <

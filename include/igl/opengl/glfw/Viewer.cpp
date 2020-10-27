@@ -33,7 +33,6 @@
 #include <igl/adjacency_list.h>
 #include <igl/writeOBJ.h>
 #include <igl/writeOFF.h>
-#include <igl/massmatrix.h>
 #include <igl/file_dialog_open.h>
 #include <igl/file_dialog_save.h>
 #include <igl/quat_mult.h>

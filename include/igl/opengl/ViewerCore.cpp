@@ -14,7 +14,6 @@
 #include "../look_at.h"
 #include "../frustum.h"
 #include "../ortho.h"
-#include "../massmatrix.h"
 #include "../barycenter.h"
 #include "../PI.h"
 #include <Eigen/Geometry>
