@@ -67,7 +67,7 @@ endfunction()
 set(LIBIGL_EIGEN_VERSION 3.3.7 CACHE STRING "Default version of Eigen used by libigl.")
 function(igl_download_eigen)
 	igl_download_project(eigen
-		GIT_REPOSITORY https://github.com/eigenteam/eigen-git-mirror.git
+		GIT_REPOSITORY https://gitlab.com/libeigen/eigen.git
 		GIT_TAG        ${LIBIGL_EIGEN_VERSION}
 		${LIBIGL_BRANCH_OPTIONS}
 	)
@@ -77,7 +77,7 @@ endfunction()
 function(igl_download_embree)
 	igl_download_project(embree
 		GIT_REPOSITORY https://github.com/embree/embree.git
-		GIT_TAG        v3.5.2
+		GIT_TAG        v3.12.1
 		${LIBIGL_BRANCH_OPTIONS}
 	)
 endfunction()
@@ -94,7 +94,7 @@ endfunction()
 function(igl_download_glfw)
 	igl_download_project(glfw
 		GIT_REPOSITORY https://github.com/glfw/glfw.git
-		GIT_TAG        3.3
+		GIT_TAG        3327050ca66ad34426a82c217c2d60ced61526b7
 		${LIBIGL_BRANCH_OPTIONS}
 	)
 endfunction()
@@ -103,12 +103,12 @@ endfunction()
 function(igl_download_imgui)
 	igl_download_project(imgui
 		GIT_REPOSITORY https://github.com/ocornut/imgui.git
-		GIT_TAG        v1.76
+		GIT_TAG        61b19489f1ba35934d9114c034b24eb5bff149e7 # 1.81 + patch for #1669
 		${LIBIGL_BRANCH_OPTIONS}
 	)
 	igl_download_project(libigl-imgui
 		GIT_REPOSITORY https://github.com/libigl/libigl-imgui.git
-		GIT_TAG        99f0643089b19f6daf5b3efd9544a65c9a851966
+		GIT_TAG        7e1053e750b0f4c129b046f4e455243cb7f804f3
 	)
 endfunction()
 
@@ -157,7 +157,7 @@ endfunction()
 function(igl_download_triangle)
 	igl_download_project(triangle
 		GIT_REPOSITORY https://github.com/libigl/triangle.git
-		GIT_TAG        d284c4a843efac043c310f5fa640b17cf7d96170
+		GIT_TAG        4df461c0083e0d768fe42ab41a617070b5acc5ef
 	)
 endfunction()
 
@@ -173,7 +173,7 @@ endfunction()
 function(igl_download_predicates)
 	igl_download_project(predicates
 		GIT_REPOSITORY https://github.com/libigl/libigl-predicates.git
-		GIT_TAG        5a1d2194ec114bff51d5a33230586cafb83adc86
+		GIT_TAG        488242fa2b1f98a9c5bd1441297fb4a99a6a9ae4
 	)
 endfunction()
 
@@ -193,7 +193,6 @@ function(igl_download_tutorial_data)
 	igl_download_project_aux(tutorial_data
 		"${LIBIGL_EXTERNAL}/../tutorial/data"
 		GIT_REPOSITORY https://github.com/libigl/libigl-tutorial-data
-		GIT_TAG        37d4e836054c9c2d2125a817c489ed8e07cd56fc
+		GIT_TAG        c1f9ede366d02e3531ecbaec5e3769312f31cccd
 	)
 endfunction()
-
